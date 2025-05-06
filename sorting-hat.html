@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Hat Quiz</title>
+    <link rel="stylesheet" href="css/sorting-hat.css" />
+    <link rel="stylesheet" href="css/print.css" media="print" />
+    <link rel="icon" href="/images/hogwarts-icon.jpg" />
+    <script src="js/sorting-hat.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="#top">
+      <div class="header-images">
+        <img src="images/potions.png" alt="Potions" class="header-img" />
+        <img src="images/wands.png" alt="Wands" class="header-img" />
+      </div>
+      <h1>
+        <a href="home.html">Hogwarts <br /><span>School of Motion UI</span></a>
+      </h1>
+      <hr />
+      <br />
+      <!-- Top Navigation -->
+      <nav class="top-nav">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="houses.html">Houses</a></li>
+          <li><a href="potter-escape.html">Potter Escape</a></li>
+          <li><a href="sorting-hat.html">Get Sorted</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="credits.html">Credits</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrapper">
+      <!-- Grid Container for Aside + Main -->
+      <div id="grid-container">
+        <!-- Aside (Sidebar Eplanation)-->
+        <aside>
+          <h2>About this Page</h2>
+          <p>
+            On this page, users can explore all four Hogwars houses. Hover
+            effects and subtle transitions are used to add depth and interaction
+            via Motion UI.
+          </p>
+
+          <h2>Magic</h2>
+          <p>
+            Animations in this section help users connect with the magic of
+            Hogwarts while highlighting the characteristics of each house.
+          </p>
+
+          <h2>Spell List</h2>
+          <ul class="motion-ui-list">
+            <li>Floating Candles (continuous animation)</li>
+            <li>Hover Effects on House Cards</li>
+            <li>Fade and Zoom on House Crests</li>
+            <li>Grid Layout to prganize visual content</li>
+            <li>Responsive layout for all screen sizes</li>
+          </ul>
+        </aside>
+
+        <!-- Main Quiz Content -->
+        <!-- Main Content -->
+        <main>
+          <section class="quiz-form">
+            <h2>Sorting Hat Quiz</h2>
+            <p>Answer the questions below to discover your Hogwarts house!</p>
+
+            <form id="sortingForm">
+              <label for="q1">Q1. What is your favorite color?</label><br />
+              <input type="radio" name="q1" value="gryffindor" /> Red<br />
+              <input type="radio" name="q1" value="hufflepuff" /> Yellow<br />
+              <input type="radio" name="q1" value="ravenclaw" /> Blue<br />
+              <input type="radio" name="q1" value="slytherin" />
+              Green<br /><br />
+
+              <label for="q2">Q2. What is your favorite animal?</label><br />
+              <input type="radio" name="q2" value="gryffindor" /> Lion<br />
+              <input type="radio" name="q2" value="hufflepuff" /> Badger<br />
+              <input type="radio" name="q2" value="ravenclaw" /> Eagle<br />
+              <input type="radio" name="q2" value="slytherin" />
+              Snake<br /><br />
+
+              <label for="q3">Q3. Favorite subject in school?</label><br />
+              <input type="radio" name="q3" value="gryffindor" /> Defense
+              Against the Dark Arts<br />
+              <input type="radio" name="q3" value="hufflepuff" />
+              Herbology<br />
+              <input type="radio" name="q3" value="ravenclaw" /> History of
+              Magic<br />
+              <input type="radio" name="q3" value="slytherin" />
+              Potions<br /><br />
+
+              <label for="q4">Q4. Favorite wizarding food?</label><br />
+              <input type="radio" name="q4" value="gryffindor" /> Steak and
+              kidney pie<br />
+              <input type="radio" name="q4" value="hufflepuff" /> Treacle
+              tart<br />
+              <input type="radio" name="q4" value="ravenclaw" /> Pumpkin
+              pasties<br />
+              <input type="radio" name="q4" value="slytherin" /> Cauldron
+              cakes<br /><br />
+
+              <div class="button-row">
+                <input type="submit" value="Sort Me!" />
+              </div>
+            </form>
+
+            <div id="result"></div>
+          </section>
+        </main>
+
+        <!-- End of Grid Container -->
+
+        <!-- Floating Candles (decorative Motion UI example) -->
+        <div class="floating-candles">
+          <div
+            class="candle"
+            style="top: 12%; left: 10%; animation-delay: 0s"
+          ></div>
+          <div
+            class="candle"
+            style="top: 20%; left: 30%; animation-delay: 1s"
+          ></div>
+          <div
+            class="candle"
+            style="top: 40%; left: 50%; animation-delay: 2s"
+          ></div>
+          <div
+            class="candle"
+            style="top: 60%; left: 70%; animation-delay: 3s"
+          ></div>
+          <div
+            class="candle"
+            style="top: 90%; left: 90%; animation-delay: 4s"
+          ></div>
+        </div>
+        <!-- End Wrapper -->
+      </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="houses.html">Houses</a></li>
+        <li><a href="potter-escape.html">Potter Escape</a></li>
+        <li><a href="sorting-hat.html">Get Sorted</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="credits.html">Credits</a></li>
+      </ul>
+    </nav>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Hogwarts School of Witchcraft and Wizardry</p>
+
+      <iframe
+        id="hogwarts-theme"
+        src="https://archive.org/embed/HarryPotter-hedwigTheme"
+        width="500"
+        height="60"
+        frameborder="0"
+        allow="autoplay"
+      ></iframe>
+    </footer>
+  </body>
+</html>

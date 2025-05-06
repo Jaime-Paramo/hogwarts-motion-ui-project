@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register for Hogwarts</title>
+    <link rel="stylesheet" href="css/register.css" />
+    <link rel="stylesheet" href="css/print.css" media="print" />
+    <link rel="icon" href="/images/hogwarts-icon.jpg" />
+    <script src="js/register.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header id="#top">
+      <div class="header-images">
+        <img src="images/potions.png" alt="Potions" class="header-img" />
+        <img src="images/wands.png" alt="Wands" class="header-img" />
+      </div>
+      <h1>
+        <a href="home.html">Hogwarts <br /><span>School of Motion UI</span></a>
+      </h1>
+      <hr />
+      <!-- Top Navigation -->
+      <nav class="top-nav">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="houses.html">Houses</a></li>
+          <li><a href="potter-escape.html">Potter Escape</a></li>
+          <li><a href="sorting-hat.html">Get Sorted</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="credits.html">Credits</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <div id="grid-container">
+        <!-- Aside Sidebar -->
+        <aside>
+          <h2>About this Page</h2>
+          <br />
+          <p>
+            Use this page to register for the Hogwarts School of Witchcraft and
+            Wizardry. The form below features all required HTML input elements
+            and Motion UI button effects.
+          </p>
+
+          <h2>Magic</h2>
+          <br />
+          <p>
+            This form showcases Motion UI transitions, interactive buttons, and
+            CSS animations designed to create an enchanting sign-up experience.
+          </p>
+
+          <h2>Spell List</h2>
+          <br />
+          <ul class="motion-ui-list">
+            <li>Glowing Buttons (hover scaling + drop shadows)</li>
+            <br />
+            <li>Floating Candle Animations</li>
+            <br />
+            <li>Responsive Form Layout</li>
+            <br />
+            <li>Custom Radio &amp; Checkbox Styling</li>
+            <br />
+            <li>Text Input Focus Effects</li>
+            <br />
+            <li>All Required Input Types for Web Forms</li>
+            <br />
+            <li>Interactive Checkbox Boxes with Labels Inside</li>
+            <br />
+            <li>Side-by-Side Submit &amp; Reset Buttons</li>
+          </ul>
+        </aside>
+
+        <!-- Main Registration Form -->
+        <main>
+          <section class="signup-form">
+            <h2>Join Our Owl Post Newsletter</h2>
+            <p>
+              Sign up to receive magical news, updates, and owl-delivered
+              surprises!
+            </p>
+
+            <form
+              method="post"
+              action="https://webdevbasics.net/scripts/demo.php"
+            >
+              <!-- Text Inputs -->
+              <label for="fullname">Full Name:</label>
+              <input type="text" id="fullname" name="fullname" required />
+
+              <label for="email">Email Address:</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required />
+              <label for="confirm-password">Confirm Password:</label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                required
+              />
+
+              <label for="address">Street Address:</label>
+              <input type="text" id="address" name="address" required />
+
+              <label for="city">City:</label>
+              <input type="text" id="city" name="city" required />
+
+              <!-- Select Dropdown -->
+              <label for="state">State:</label>
+              <select id="state" name="state" required>
+                <option value="">--Select a State--</option>
+                <option value="ny">New York</option>
+                <option value="nj">New Jersey</option>
+                <option value="pa">Pennsylvania</option>
+                <option value="other">Other</option>
+              </select>
+
+              <!-- Date Input -->
+              <label for="birthday">Birthday:</label>
+              <input type="date" id="birthday" name="birthday" required />
+
+              <!-- Radio Buttons -->
+              <label>Are you a:</label>
+              <div class="radio-group">
+                <label
+                  ><input type="radio" name="role" value="witch" required />
+                  Witch</label
+                >
+                <label
+                  ><input type="radio" name="role" value="wizard" required />
+                  Wizard</label
+                >
+              </div>
+
+              <!-- Checkboxes -->
+              <label>What are you interested in? (Choose all that apply)</label>
+              <div class="checkbox-group">
+                <label
+                  ><input type="checkbox" name="interest" value="potions" />
+                  Potions</label
+                >
+                <label
+                  ><input type="checkbox" name="interest" value="dueling" />
+                  Dueling Club</label
+                >
+                <label
+                  ><input type="checkbox" name="interest" value="quidditch" />
+                  Quidditch</label
+                >
+                <label
+                  ><input type="checkbox" name="interest" value="astronomy" />
+                  Astronomy</label
+                >
+                <label
+                  ><input type="checkbox" name="interest" value="herbology" />
+                  Herbology</label
+                >
+
+                <label
+                  ><input
+                    type="checkbox"
+                    name="interest"
+                    value="care-of-magical-creatures"
+                  />
+                  Care of Magical Creatures</label
+                >
+              </div>
+
+              <!-- Textarea -->
+              <label for="message"
+                >Why are you excited to attend Hogwarts?</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                cols="50"
+                required
+              ></textarea>
+
+              <!-- Buttons -->
+              <div class="button-row">
+                <button type="submit" class="signup-button">Sign Up</button>
+                <!-- #fregment link back to top -->
+                <div class="back-to-top">
+                  <button>
+                    <a href="#top">Back to Top</a>
+                  </button>
+                </div>
+
+                <button type="reset" class="signup-button">Reset</button>
+              </div>
+            </form>
+          </section>
+        </main>
+      </div>
+
+      <!-- Floating Candles -->
+      <div class="floating-candles">
+        <div
+          class="candle"
+          style="top: 12%; left: 10%; animation-delay: 0s"
+        ></div>
+        <div
+          class="candle"
+          style="top: 20%; left: 30%; animation-delay: 1s"
+        ></div>
+        <div
+          class="candle"
+          style="top: 40%; left: 50%; animation-delay: 2s"
+        ></div>
+        <div
+          class="candle"
+          style="top: 60%; left: 70%; animation-delay: 3s"
+        ></div>
+        <div
+          class="candle"
+          style="top: 90%; left: 90%; animation-delay: 4s"
+        ></div>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="houses.html">Houses</a></li>
+        <li><a href="potter-escape.html">Potter Escape</a></li>
+        <li><a href="sorting-hat.html">Get Sorted</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="credits.html">Credits</a></li>
+      </ul>
+    </nav>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Hogwarts School of Witchcraft and Wizardry</p>
+      <iframe
+        id="hogwarts-theme"
+        src="https://archive.org/embed/HarryPotter-hedwigTheme"
+        width="500"
+        height="60"
+        frameborder="0"
+        allow="autoplay"
+      ></iframe>
+    </footer>
+  </body>
+</html>

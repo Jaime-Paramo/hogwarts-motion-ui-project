@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hogwarts Houses</title>
+    <link rel="stylesheet" href="css/houses.css" />
+    <link rel="stylesheet" href="css/print.css" media="print" />
+    <link rel="icon" href="/images/hogwarts-icon.jpg" />
+    <script src="js/houses.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="#top">
+      <div class="header-images">
+        <img src="images/potions.png" alt="Potions" class="header-img" />
+        <img src="images/wands.png" alt="Wands" class="header-img" />
+      </div>
+      <h1>
+        <a href="home.html">Hogwarts <br /><span>School of Motion UI</span></a>
+      </h1>
+      <hr />
+      <br />
+      <!-- Top Navigation -->
+      <nav class="top-nav">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="houses.html">Houses</a></li>
+          <li><a href="potter-escape.html">Potter Escape</a></li>
+          <li><a href="sorting-hat.html">Get Sorted</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="credits.html">Credits</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrapper">
+      <!-- Grid Container for Aside + Main -->
+      <div id="grid-container">
+        <!-- Aside (Sidebar Eplanation)-->
+        <aside>
+          <h2>About this Page</h2>
+          <p>
+            On this page, users can explore all four Hogwars houses. Hover
+            effects and subtle transitions are used to add depth and interaction
+            via Motion UI.
+
+            <h2>Four houses are:</h2>
+            <ol>
+              <li>Gryffindor</li>
+              <li>Slytherin</li>
+              <li>Ravenclaw</li>
+              <li>Hufflepuff</li>
+            </ol>
+          </p>
+
+          <h2>Magic</h2>
+          <p>
+            Animations in this section help users connect with the magic of
+            Hogwarts while highlighting the characteristics of each house.
+          </p>
+
+          <h2>Spell List</h2>
+          <ul class="motion-ui-list">
+            <li>Floating Candles (continuous animation)</li>
+            <li>Hover Effects on House Cards</li>
+            <li>Fade and Zoom on House Crests</li>
+            <li>Grid Layout to prganize visual content</li>
+            <li>Responsive layout for all screen sizes</li>
+          </ul>
+
+          <h2>Home</h2>
+          <p>
+            The Home page introduces Hogwarts and showcases Motion UI elements
+            such as animated candles, hover effects, and scrolling animations to
+            create a magical experience!
+          </p>
+
+          <h2>Learn about the Houses</h2>
+          <p>
+            Each house at Hogwarts is brought to life with unique hover
+            animations and Motion UI effects to show their spirit and values.
+          </p>
+
+          <h2>Potter Escape</h2>
+          <p>
+            In this game, Motion UI is used to animate Harry’s flying movement,
+            spider obstacles, and background transitions as you guide him
+            through danger!
+          </p>
+
+          <h2>Sorting Ceremony</h2>
+          <p>
+            Experience a magical Sorting Hat quiz enhanced by animated
+            transitions, fading effects, and dynamic interactions — all examples
+            of Motion UI in action!
+            <br />
+            <br />
+            <button>
+              <a href="sorting-hat.html" class="button">Get Sorted</a>
+            </button>
+          </p>
+
+          <h2>Register</h2>
+          <p>
+            Register for the Hogwarts School of Witchcraft and Wizardry to
+            experience the magic of Hogwarts and learn about the houses!
+            <br />
+            <br />
+            <button>
+              <a href="register.html" class="button">Register</a>
+            </button>
+          </p>
+
+          <h2>Credits</h2>
+          <p>
+            The credits page acknowledges the creators and contributors of the
+            Hogwarts School of Witchcraft and Wizardry project.
+          </p>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+          <section class="welcome">
+            <h2>Explore the Hogwarts Houses</h2>
+            <p>
+              Hover over a crest to discover the house's traits. Click to enter
+              their common room!
+            </p>
+          </section>
+
+          <!-- House Cards Section -->
+          <section class="house-cards">
+            <!-- Gryffindor -->
+            <div class="house-card" data-house="gryffindor">
+              <img src="images/gryffindor-crest.JPG" alt="Gryffindor Crest" />
+              <h3>Gryffindor</h3>
+              <p class="traits">Bravery, courage, determination.</p>
+              <p class="fun-fact">
+                🦁 Fun Fact: Their ghost is Nearly Headless Nick!
+              </p>
+            </div>
+
+            <!-- Slytherin -->
+            <div class="house-card" data-house="slytherin">
+              <img src="images/slytherin-crest.png" alt="Slytherin Crest" />
+              <h3>Slytherin</h3>
+              <p>
+                Slytherin values ambition, cunning, leadership, and
+                resourcefulness.
+              </p>
+              <p class="fun-fact">
+                🐍 Fun Fact: Their ghost is The Bloody Baron!
+              </p>
+            </div>
+
+            <!-- Ravenclaw -->
+            <div class="house-card" data-house="ravenclaw">
+              <img src="images/ravenclaw-crest.webp" alt="Ravenclaw Crest" />
+              <h3>Ravenclaw</h3>
+              <p>
+                Ravenclaw values intelligence, creativity, learning, and wit.
+              </p>
+              <p class="fun-fact">🦅 Fun Fact: Their ghost is The Grey Lady!</p>
+            </div>
+
+            <!-- Hufflepuff -->
+            <div class="house-card" data-house="hufflepuff">
+              <img src="images/hufflepuff-crest.jpg" alt="Hufflepuff Crest" />
+              <h3>Hufflepuff</h3>
+              <p>
+                Hufflepuff values hard work, patience, loyalty, and fair play.
+              </p>
+              <p class="fun-fact">🦡 Fun Fact: Their ghost is The Fat Friar!</p>
+            </div>
+          </section>
+          <!-- #fregment link back to top -->
+           <div class="back-to-top">
+           <button>
+            <a href="#top">Back to Top</a>
+          </button>
+        </div>
+        
+          <!-- End of House Cards -->
+        </main>
+      </div>
+      <!-- End of Grid Container -->
+
+      <!-- Floating Candles (decorative Motion UI example) -->
+      <div class="floating-candles">
+        <div
+          class="candle"
+          style="top: 12%; left: 10%; animation-delay: 0s"
+        ></div>
+        <div
+          class="candle"
+          style="top: 20%; left: 30%; animation-delay: 1s"
+        ></div>
+        <div
+          class="candle"
+          style="top: 40%; left: 50%; animation-delay: 2s"
+        ></div>
+        <div
+          class="candle"
+          style="top: 60%; left: 70%; animation-delay: 3s"
+        ></div>
+        <div
+          class="candle"
+          style="top: 90%; left: 90%; animation-delay: 4s"
+        ></div>
+      </div>
+      <!-- End Wrapper -->
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="houses.html">Houses</a></li>
+        <li><a href="potter-escape.html">Potter Escape</a></li>
+        <li><a href="sorting-hat.html">Get Sorted</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="credits.html">Credits</a></li>
+      </ul>
+    </nav>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Hogwarts School of Witchcraft and Wizardry</p>
+
+      <iframe
+        id="hogwarts-theme"
+        src="https://archive.org/embed/HarryPotter-hedwigTheme"
+        width="500"
+        height="60"
+        frameborder="0"
+        allow="autoplay"
+      ></iframe>
+    </footer>
+  </body>
+</html>
